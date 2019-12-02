@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+<div id="haokan">
+    <h1>{{name}},是个温柔的小仙女！</h1>
+</div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el : "#haokan",
+        data:{
+            name:"陈云",
+        }
+    });
+
+</script>
+</body>
+</html>
