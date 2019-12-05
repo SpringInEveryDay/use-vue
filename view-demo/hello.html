@@ -6,7 +6,11 @@
 </head>
 <body>
 <div id="haokan">
+    <!--加上v-model就可以通过模型操作视图，也可以通过视图来操作模型了-->
+    <!--被称作双向绑定，因为可以通过model来操作视图view也可以通过view来操作model-->
+    <input type="text" v-model="num"> <button @click="num++">+</button>
     <h1>{{name}},是个温柔的小仙女！</h1>
+    <h1>张杰有{{num}}个粉丝</h1>
 </div>
 <script src="node_modules/vue/dist/vue.js"></script>
 <script>
@@ -14,6 +18,7 @@
         el : "#haokan",
         data:{
             name:"陈云",
+            num : 1000000
         }
     });
 
